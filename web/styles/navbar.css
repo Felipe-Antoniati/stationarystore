@@ -6,7 +6,7 @@
   justify-content: center;
   position: fixed;
   top: 0;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
   background: var(--light-color);
 }
 
@@ -75,7 +75,7 @@
 
 .nav-search-submit:hover {
   cursor: pointer;
-  background-color: #67aeff;  
+  background-color: #67aeff;
 }
 
 .nav-link-acount {
@@ -183,13 +183,13 @@
   color: #131314;
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .nav-middle {
     display: none;
-  } 
+  }
 }
 
-@media(max-width: 500px) {
+@media (max-width: 500px) {
   .nav-link-text {
     display: none;
   }
@@ -212,5 +212,4 @@
     width: 5rem;
     margin-right: 1.6rem;
   }
-  
 }

@@ -13,7 +13,7 @@ export default function Navbar() {
   return (
     <>
       <nav className="navbar">
-        <div className="nav-left w33">
+        <div className="nav-left w400">
           <div className="menu-navbar" onClick={showSidebar}>
             <a>
               <AiIcons.AiOutlineMenu size={25} />
@@ -37,7 +37,7 @@ export default function Navbar() {
           </form>
         </div>
 
-        <div className="nav-right w33">
+        <div className="nav-right w400">
           <div className="nav-link-acount">
             <CgIcons.CgProfile size={30} />
             <div className="nav-link-text">

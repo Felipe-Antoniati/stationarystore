@@ -1,0 +1,89 @@
+.highlights {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 1.6rem;
+}
+
+.featured-items {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 333px;
+  height: 400px;
+  margin: 0.3rem;
+  border-radius: 0.3rem;
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: #FFF;
+}
+
+.image-card { 
+  width: 100%;
+  height: 75%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-card img {
+  width: 97%;
+  height: 97%;
+}
+
+.image-card:hover img{
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+
+.footer-card {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+}
+
+.title-card h3 {
+  color: #86888A;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.price-cart h4{
+  font-weight: 400;
+  margin-top: 0.7rem;
+}
+
+@media (max-width: 1000px) {
+  .title-card h3 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .highlights {
+    margin-top: 0;
+  }
+  
+  .title-card h3 {
+    font-size: 0.9rem;
+  }
+   
+}
+
+@media (max-width: 650px) {
+  .featured-items {
+    flex-direction: column;
+  } 
+
+  .title-card h3 {
+    font-size: 1.2rem;
+  }
+}

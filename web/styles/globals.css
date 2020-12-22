@@ -19,12 +19,20 @@ a {
 body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: #525050;
+  background-color: #FBFBFF;  
 }
 
-.w33 {
+.w400 {
   width: 400px;
   height: 100%;
   display: flex;
   align-items: center;
-  
 }
+.w33 {
+  width: 333px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
