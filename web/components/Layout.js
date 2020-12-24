@@ -1,4 +1,5 @@
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 import NavList from "./Navlist";
 
 export default function Layout({ children }) {
@@ -7,6 +8,7 @@ export default function Layout({ children }) {
       <Navbar />
       <NavList />
       {children}
+      <Footer />
     </>
   );
 }
