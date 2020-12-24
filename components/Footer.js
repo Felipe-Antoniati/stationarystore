@@ -1,7 +1,9 @@
 import Link from "next/link";
+
 import gPlay from "../images/google-play.png";
 import aStore from "../images/app-store.png";
 import aguiarLogo from "../images/logo.svg";
+
 import * as AiIcons from "react-icons/ai";
 
 function Footer() {
@@ -50,7 +52,10 @@ function Footer() {
           </div>
         </div>
         <div className="logo-footer">
-        <img src={aguiarLogo} alt="Aguiar Papelaria"/>
+          <img 
+            src={aguiarLogo} 
+            alt="Aguiar Papelaria"
+          />
         </div>
       </div>
     </footer>
