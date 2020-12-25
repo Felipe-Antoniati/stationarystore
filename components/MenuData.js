@@ -1,4 +1,4 @@
-export const SidebarData = [
+export const MenuData = [
   {
     title: "Lançamentos",
     path: "/lancamentos",

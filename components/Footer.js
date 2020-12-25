@@ -1,16 +1,17 @@
 import Link from "next/link";
 
-import gPlay from "../images/google-play.png";
-import aStore from "../images/app-store.png";
 import aguiarLogo from "../images/logo.svg";
+
+import googlePlayImg from "../images/google-play.png";
+import appleStoreImg from "../images/app-store.png";
 
 import * as AiIcons from "react-icons/ai";
 
 function Footer() {
   return (
-    <footer className="footer bg-dark">
+    <footer className="footer-container">
       <div className="footer-content grid grid-3">
-        <div className="footer-left">
+        <div className="left-footer">
           <h2>Sobre nós</h2>
           <p>
             Somos uma empresa familiar, que presa pela qualidade e o bom
@@ -18,32 +19,33 @@ function Footer() {
             com milhares de clientes satisfeitos!
           </p>
         </div>
-        <div className="app-platforms">
+
+        <div className="middle-footer">
           <div>
             <h3>Baixe o Aplicativo</h3>
-            <div className="apps">
+            <div className="apps-platforms">
               <div className="g-play">
-                <img src={gPlay} alt="Google Play" />
+                <img src={googlePlayImg} alt="Google Play" />
               </div>
               <div className="a-store">
-                <img src={aStore} alt="Google Play" />
+                <img src={appleStoreImg} alt="Google Play" />
               </div>
             </div>
           </div>
           <div className="social">
             <h3>Siga a gente</h3>
             <div className="social-medias">
-              <Link href="#">
+              <Link href="/">
                 <a className="facebook">
                   <AiIcons.AiOutlineFacebook size={40} />
                 </a>
               </Link>
-              <Link href="#">
+              <Link href="/">
                 <a className="instagram">
                   <AiIcons.AiOutlineInstagram size={40} />
                 </a>
               </Link>
-              <Link href="#">
+              <Link href="/">
                 <a className="twitter">
                   <AiIcons.AiOutlineTwitter size={40} />
                 </a>
@@ -51,11 +53,9 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className="logo-footer">
-          <img 
-            src={aguiarLogo} 
-            alt="Aguiar Papelaria"
-          />
+
+        <div className="right-footer">
+          <img src={aguiarLogo} alt="Aguiar Papelaria" />
         </div>
       </div>
     </footer>

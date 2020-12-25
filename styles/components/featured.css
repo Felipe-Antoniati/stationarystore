@@ -1,0 +1,30 @@
+.featured-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 1.6rem;
+}
+
+.featured-items {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@media (max-width: 768px) {
+  .highlights {
+    margin-top: 0;
+  } 
+}
+
+@media (max-width: 650px) {
+  .featured-items {
+    flex-direction: column;
+  } 
+}

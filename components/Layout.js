@@ -5,10 +5,12 @@ import NavList from "./Navlist";
 export default function Layout({ children }) {
   return (
     <>
-      <Navbar />
-      <NavList />
+      <header className="header-content">
+        <Navbar />
+        <NavList />
+      </header>
       {children}
-      <Footer />
+        <Footer />
     </>
   );
 }

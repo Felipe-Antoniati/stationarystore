@@ -1,12 +1,12 @@
 import Link from "next/link";
 
-export default function Card({ title, subtitle, dir }) {
+export default function Card({ title, subtitle, dir, altName }) {
   return (
     <div className="card">
       <div className="image-card">
         <Link href="/product-details">
           <a>
-            <img src={dir} alt="Lapis" />
+            <img src={dir} alt={altName} />
           </a>
         </Link>
       </div>

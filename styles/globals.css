@@ -1,8 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
 :root {
+
+  /*main*/
+  --primary-color: #3281e9;
+  --secondary-color: #478EEB;
+  --footer-color: #EDF4FD;
+
+  /*backgrounds*/
   --light-color: #FBFBFF;
-  --gray-s1: #cecece;
-  --gray-s2: #afafaf;
-  --gray-s3: #8f8f8f;
+  --light-gray-color: #f0f0f0;
+
+  --dark-color: #242424;
+  --black-color: #131314;
+  
+  /*texts*/
+  --title-color: #262B29;
+  --text-gray-color: #3A413E;
+  --text-light-color: #FFFFFF;
+  --text-base-color: #c3c3c3;
+
+  /*social medias*/
+  --facebook-color: #4164AC;
+  --instagram-color: #F84C5D;
+  --twitter-color: #2AA4D8;
 }
 
 * {
@@ -17,10 +38,11 @@ a {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  color: #525050;
-  background-color: #F0F2EF;  
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Lato";
+  color: var(--text-gray-color);
+  background-color: var(--light-color);
 }
 
 .w500 {
