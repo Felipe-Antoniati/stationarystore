@@ -58,6 +58,29 @@ function Footer() {
           <img src={aguiarLogo} alt="Aguiar Papelaria" />
         </div>
       </div>
+      <section className="sub-footer">
+        <div className="display-img">
+          <div className="sub-content">
+            <div className="sub-item">
+              <AiIcons.AiOutlineEnvironment size={30} />
+              <span>
+                Av. Anchieta, 340 - Centervalle, Bertioga - SP, 11250-039
+              </span>
+            </div>
+            <div className="contact-footer">
+              <div className="sub-item">
+                <AiIcons.AiOutlinePhone size={30} />
+                <span> (13) 3317-4063</span>
+              </div>
+              <div className="sub-item">
+                <AiIcons.AiOutlineMail size={30} />
+                <span>papelariaaguiar@hotmail.com</span>
+              </div>
+            </div>
+          </div>
+          <img src={aguiarLogo} alt="Aguiar Papelaria" />
+        </div>
+      </section>
     </footer>
   );
 }
