@@ -1,5 +1,10 @@
 export const MenuData = [
   {
+    title: "Home",
+    path: "/",
+    cName: "nav-text",
+  },  
+  {
     title: "Lançamentos",
     path: "/lancamentos",
     cName: "nav-text",
@@ -32,11 +37,6 @@ export const MenuData = [
   {
     title: "Contato",
     path: "/contact",
-    cName: "nav-text",
-  },
-  {
-    title: "Faça Seu Login",
-    path: "/login",
     cName: "nav-text",
   },
 ];

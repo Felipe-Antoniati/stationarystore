@@ -1,4 +1,5 @@
 import Link from "next/link";
+import {row1, row2, row3} from "./ProductData";
 
 export default function Card({ title, subtitle, dir, altName }) {
   return (

@@ -49,13 +49,7 @@
   margin-top: 0.7rem;
 }
 
-@media (max-width: 1000px) {
-  .title-card h3 {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .title-card h3 {
     font-size: 0.9rem;
   }

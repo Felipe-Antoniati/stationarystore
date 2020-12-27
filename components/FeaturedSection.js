@@ -1,4 +1,5 @@
 import Card from "./Card";
+import * as ProductData from "./ProductData";
 
 import imgOne from "../images/products/1.png";
 import imgTwo from "../images/products/2.png";
@@ -12,67 +13,46 @@ import imgNine from "../images/products/9.png";
 
 export default function FeaturedSection() {
   return (
-    <section className="featured-container">
+    <section className="featured-container">    
       <div className="featured-items w33">
-        <Card
-          dir={imgOne}
-          title="LAPIS 12 CORES TONS PASTEL TRIS"
-          subtitle="R$ 19, 90"
-          altName="Lapis"
-        />
-        <Card
-          dir={imgTwo}
-          title="CANETA CIS BRUSH DUAL TIP COM 10 UNIDADES"
-          subtitle="R$ 49, 90"
-          altName="Caneta"
-        />
-        <Card
-          dir={imgThree}
-          title="CANETA CIS BRUSH TONS DE CINZA  COM 6 UNIDADES"
-          subtitle="R$ 89, 90"
-          altName="Caneta"
-        />
-      </div>
-      <div className="featured-items w33">
-        <Card
-          dir={imgFour}
-          title="CANETA CIS BRUSH TONS DE PELE COM 6 UNIDADES"
-          subtitle="R$ 89, 90"
-          altName="Caneta"
-        />
-        <Card
-          dir={imgFive}
-          title="CANETA CIS BRUSH METALICA COM 6 UNIDADES"
-          subtitle="R$ 18, 90"
-          altName="Caneta"
-        />
-        <Card
-          dir={imgSix}
-          title="CANETA MARCA TEXTO STABILO BOSS"
-          subtitle="R$ 9, 90"
-          altName="Caneta"
-        />
-      </div>
-      <div className="featured-items w33">
-        <Card
-          dir={imgSeven}
-          title="LAPIS 12 CORES MULTICOLOR NOVAS CORES"
-          subtitle="R$ 9, 90"
-          altName="Lapis"
-        />
-        <Card
-          dir={imgEight}
-          title="LAPIS 36 CORES MULTICOLOR NOVAS CORES"
-          subtitle="R$ 27, 90"
-          altName="Lapis"
-        />
-        <Card
-          dir={imgNine}
-          title="LAPIS 24 CORES MULTICOLOR NOVAS CORES"
-          subtitle="R$ 18, 90"
-          altName="Lapis"
-        />
-      </div>
+      {ProductData.row1.map((image) => {
+        return (
+            <Card
+              key={image.id}
+              dir={image.productImage}
+              title={image.productName}
+              subtitle={image.price}
+              altName={image.tag}
+            />
+            );
+          })}
+        </div>      
+        <div className="featured-items w33">
+      {ProductData.row2.map((image) => {
+        return (
+            <Card
+              key={image.id}
+              dir={image.productImage}
+              title={image.productName}
+              subtitle={image.price}
+              altName={image.tag}
+            />
+            );
+          })}
+        </div>      
+        <div className="featured-items w33">
+      {ProductData.row3.map((image) => {
+        return (
+            <Card
+              key={image.id}
+              dir={image.productImage}
+              title={image.productName}
+              subtitle={image.price}
+              altName={image.tag}
+            />
+            );
+          })}
+        </div>
     </section>
   );
 }
