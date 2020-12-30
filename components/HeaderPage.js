@@ -2,15 +2,15 @@ import Link from "next/link";
 
 export default function HeaderPage({
   title,
-  children,
   previous,
   current,
   hrefPrevious,
   hrefCurrent,
+  children,
 }) {
   return (
     <section className="header-page">
-      <div className="header-content">
+      <div className="header-page-content">
         <div className="header-content-left">
           <div className="nav-link-top">
             <Link href={hrefPrevious}>
@@ -18,17 +18,12 @@ export default function HeaderPage({
                 <span>{previous}</span>
               </a>
             </Link>
-            <Link href={hrefCurrent}>
-              <a className="current-page">
-                <span>{current}</span>
-              </a>
-            </Link>
+            &gt;
+            <span className="current-page">{current}</span>
           </div>
           <h3>{title}</h3>
         </div>
-        <div className="header-content-right">
-          {children}
-        </div>
+        <div className="header-content-right">{children}</div>
       </div>
     </section>
   );

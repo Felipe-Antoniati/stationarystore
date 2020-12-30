@@ -7,6 +7,8 @@ import "../styles/components/navlist.css";
 import "../styles/components/featured.css";
 import "../styles/components/card.css";
 import "../styles/components/footer.css";
+import "../styles/components/headerpage.css";
+import "../styles/components/select.css";
 
 function MyApp({ Component, pageProps }) {
   return (
